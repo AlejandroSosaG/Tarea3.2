@@ -19,7 +19,16 @@ class MainActivity : AppCompatActivity() {
             Imagen("https://loremflickr.com/320/240?random=7"),
             Imagen("https://loremflickr.com/320/240?random=8"),
             Imagen("https://loremflickr.com/320/240?random=9"),
-            Imagen("https://loremflickr.com/320/240?random=10")), object : ImagenPulsada{
+            Imagen("https://loremflickr.com/320/240?random=10"),
+            Imagen("https://loremflickr.com/320/240?random=11"),
+            Imagen("https://loremflickr.com/320/240?random=12"),
+            Imagen("https://loremflickr.com/320/240?random=13"),
+            Imagen("https://loremflickr.com/320/240?random=14"),
+            Imagen("https://loremflickr.com/320/240?random=15"),
+            Imagen("https://loremflickr.com/320/240?random=16"),
+            Imagen("https://loremflickr.com/320/240?random=17"),
+            Imagen("https://loremflickr.com/320/240?random=18"),
+            ), object : ImagenPulsada{
             override fun ImagenPulsada(imagen: Imagen) {
                 TODO("Not yet implemented")
             }
