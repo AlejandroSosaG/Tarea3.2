@@ -1,5 +1,6 @@
 package com.example.tarea3_2
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tarea3_2.databinding.GaleriaBinding
@@ -30,7 +31,9 @@ class MainActivity : AppCompatActivity() {
             Imagen("https://loremflickr.com/320/240?random=18"),
             ), object : ImagenPulsada{
             override fun ImagenPulsada(imagen: Imagen) {
-                TODO("Not yet implemented")
+                val intent = Intent(this@MainActivity, ImagenCompleta::class.java)
+                intent.putExtra("url", imagen.imagen)
+                startActivity(intent)
             }
             })
     }
